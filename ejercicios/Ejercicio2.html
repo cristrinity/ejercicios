@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mi primner documento HTML</title>
     <meta charset="utf-8">
-    <style type="text/css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css"> 
+</head>
+    <!-- ** Del ejercicio de html **
+        <style type="text/css">
         table {
             border-collapse: collapse;
         }
-
         th,
         td {
             border: 1px solid black;
             padding: 5px;
         }
-    </style>
+    </style> -->
 </head>
 
 <body>
@@ -28,115 +33,114 @@
                 <th rowspan="2" scope="col">TAG</th>
                 <th colspan="2" scope="col">VERSIÓN HTML</th>
             </tr>
-            <tr>
+            <tr class="version">
                 <th scope="col">HTML 4</th>
                 <th scope="col">HTML 5</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th scope="row" rowspan="5">HTML básico</th>
-                <td scope="row">!DOCTYPE</td>
+                <th class="amarillo" scope="row" rowspan="5">HTML básico</th>
+                <td class="version" scope="row">!DOCTYPE</td>
                 <td scope="row">✅</td>
                 <td scope="row">✅</td>
             </tr>
             <tr>
-                <td scope="row">html</td>
+                <td class="version" scope="row">html</td>
                 <td scope="row">✅</td>
                 <td scope="row">✅</td>
             </tr>
             <tr>
-                <td scope="row">head</td>
+                <td class="version" scope="row">head</td>
                 <td scope="row">✅</td>
                 <td scope="row">✅</td>
             </tr>
             <tr>
-                <td scope="row">title</td>
+                <td class="version" scope="row">title</td>
                 <td scope="row">✅</td>
                 <td scope="row">✅</td>
             </tr>
             <tr>
-                <td scope="row">body</td>
+                <td class="version2" scope="row">body</td>
                 <td scope="row">✅</td>
                 <td scope="row">❌</td>
             </tr>
             <tr>
-                <th scope="row" rowspan="8">Para formatear texto</th>
-            <tr>
-                <td scope="row">acronym</td>
-                <td scope="row">✅</td>
-                <td scope="row">❌</td>
-            </tr>
-            <td scope="row">bbr</td>
-            <td scope="row">✅</td>
-            <td scope="row">✅</td>
-            </tr>
-            <tr>
-                <td scope="row">address</td>
-                <td scope="row">✅</td>
-                <td scope="row">✅</td>
-            </tr>
-            <tr>
-                <td scope="row">b</td>
-                <td scope="row">✅</td>
-                <td scope="row">✅</td>
-            </tr>
-            <tr>
-                <td scope="row">big</td>
+                <th class="amarillo" scope="row" rowspan="7">Para formatear texto</th>
+                <td class="version2" scope="row">acronym</td>
                 <td scope="row">✅</td>
                 <td scope="row">❌</td>
             </tr>
             <tr>
-                <td scope="row">blockquote</td>
+                <td class="version" scope="row">bbr</td>
                 <td scope="row">✅</td>
                 <td scope="row">✅</td>
             </tr>
             <tr>
-                <td scope="row">center</td>
+                <td class="version" scope="row">address</td>
+                <td scope="row">✅</td>
+                <td scope="row">✅</td>
+            </tr>
+            <tr>
+                <td class="version" scope="row">b</td>
+                <td scope="row">✅</td>
+                <td scope="row">✅</td>
+            </tr>
+            <tr>
+                <td class="version2" scope="row">big</td>
                 <td scope="row">✅</td>
                 <td scope="row">❌</td>
             </tr>
             <tr>
-                <th scope="row" rowspan="8">Formulario</th>
+                <td class="version" scope="row">blockquote</td>
+                <td scope="row">✅</td>
+                <td scope="row">✅</td>
+            </tr>
             <tr>
-                <td scope="row">form</td>
+                <td class="version2" scope="row">center</td>
                 <td scope="row">✅</td>
                 <td scope="row">❌</td>
             </tr>
             <tr>
-                <td scope="row">input</td>
-                <td scope="row">✅</td>
-                <td scope="row">✅</td>
-            </tr>
-            <tr>
-                <td scope="row">textarea</td>
-                <td scope="row">✅</td>
-                <td scope="row">✅</td>
-            </tr>
-            <tr>
-                <td scope="row">button</td>
-                <td scope="row">✅</td>
-                <td scope="row">✅</td>
-            </tr>
-            <tr>
-                <td scope="row">select</td>
+                <th class="amarillo" scope="row" rowspan="8">Formulario</th>
+                <td class="version2" scope="row">form</td>
                 <td scope="row">✅</td>
                 <td scope="row">❌</td>
             </tr>
             <tr>
-                <td scope="row">datalist</td>
+                <td class="version" scope="row">input</td>
+                <td scope="row">✅</td>
+                <td scope="row">✅</td>
+            </tr>
+            <tr>
+                <td class="version" scope="row">textarea</td>
+                <td scope="row">✅</td>
+                <td scope="row">✅</td>
+            </tr>
+            <tr>
+                <td class="version" scope="row">button</td>
+                <td scope="row">✅</td>
+                <td scope="row">✅</td>
+            </tr>
+            <tr>
+                <td class="version2" scope="row">select</td>
+                <td scope="row">✅</td>
+                <td scope="row">❌</td>
+            </tr>
+            <tr>
+                <td class="version2" scope="row">datalist</td>
                 <td scope="row">❌</td>
                 <td scope="row">✅</td>
             </tr>
             <tr>
-                <td scope="row">output</td>
+                <td class="version2" scope="row">output</td>
                 <td scope="row">❌</td>
                 <td scope="row">✅</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <td colspan="4"><a href="#">Referencias de todos los elementos HTML</a></td>
+                <td class="pieC" colspan="4"><a href="#">Referencias de todos los elementos HTML</a></td>
             </tr>
         </tfoot>
     </table>
